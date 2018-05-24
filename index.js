@@ -1,9 +1,9 @@
 var katzDeli = [];
 
-function takeANumber(katzDeli,person){
+function takeANumber(line,person){
   
-  katzDeli.push(person);
-  return `Welcome, ${person}. You are number ${katzDeli.length} in line.`;
+  line.push(person);
+  return `Welcome, ${person}. You are number ${line.length} in line.`;
   
 }
 
@@ -13,12 +13,13 @@ function nowServing(katzDeli){
     return `There is nobody waiting to be served!`;
   }
   
-  else{
+
     var curr = katzDeli.splice(0,1);
     
     return `Currently serving ${curr}.` 
-  }
   
+  
+  nowServing("hello")
   
   
 }
